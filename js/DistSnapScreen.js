@@ -176,7 +176,7 @@
             _addCanvasEvent.apply(this);
         }
         this.context.closePath();
-        this.paintType = paras.paintType||this.PaintType.Pencil;
+        this.paintType = paras.paintType||this.paintType;
         this.context.font = paras.font||"14px Arial";
         this.context.lineWidth = paras.lineWidth||3;
         this.context.strokeStyle = paras.strokeStyle||"red";
