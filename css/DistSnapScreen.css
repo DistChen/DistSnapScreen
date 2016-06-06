@@ -1,0 +1,83 @@
+.SnapContainer{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+}
+.SnapContainer > div{
+    position: absolute;
+    background-color: #ffffff;
+    display: none;
+}
+.SnapContainerCanvas {
+}
+.SnapContainerCanvas > img{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.SnapContainerCanvas > input{
+    position: absolute;
+    display: block;
+    border: 1px dashed;
+    outline: none;
+    background-color: transparent;
+    display: none;
+}
+.SnapContainerCanvas > canvas{
+    cursor: crosshair;
+    position: relative;
+}
+.SnapContainerCanvas > div{
+    text-align: right;
+    background-color: white;
+    margin-top: -3px;
+    padding-bottom: 1px;
+}
+.SnapContainerCanvas > div > button{
+    display:inline-block;
+    outline:none;
+    border: none;
+    background-color: #585d68;
+    color: white;
+    font-size: 12px;
+    padding: 2px 8px;
+    cursor: pointer;
+    margin-left: -3px;
+}
+.SnapContainerCanvas > div > button:last-child,
+.SnapContainerCanvas > div > .active,
+.SnapContainerCanvas > div > button:hover{
+    background-color:#f97935;
+}
+.SnapContainerCanvas > div > button:last-child{
+    margin-left: 3px;
+}
+.SnapContainerDownLoad{
+    text-align: center;
+    width: 340px;
+    height: 100px;
+    left: calc(50% - 170px);
+    top: calc(50% - 50px);
+}
+.SnapContainerDownLoad a{
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    background-color: #f97935;
+    color: white;
+    text-decoration: none;
+    width: 60px;
+    cursor: pointer;
+}
+.SnapContainerDownLoad a:last-child{
+    margin-left: 5px;
+    background-color: #585d68;
+}

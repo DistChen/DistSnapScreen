@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="css/DistSnapScreen.css" rel="stylesheet">
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/DistSnapScreen.js"></script>
+</head>
+<body>
+    <script>
+        DistSnapScreen.init({});
+        function snap(){
+            var src = DistSnapScreen.snapScreen();
+            $("<br><img src='"+src+"'>").appendTo(document.body);
+        }
+        function snapAndScrawl(){
+            DistSnapScreen.snapScreenAndScrawl(function(src){
+                $("<br><img src='"+src+"'>").appendTo(document.body);
+            });
+        }
+    </script>
+    <button onclick="snap();">截图</button>
+    <button onclick="snapAndScrawl();">截图并涂鸦</button>
+</body>
+</html>
