@@ -39,6 +39,7 @@
  >>5. 然后通过canvas.toDataURL("image/png")即可取到涂鸦后的图片了。
  >
 >涂鸦状态中的dom 结构如下所示:
+
 ![这里写图片描述](http://imglf0.ph.126.net/NteWyr7aaSBrjRTA9MgE2Q==/6631586735186975823.png)
 
 可以看到在canvas的下面有一个img，这也就是为什么图片还没绘制到画布上也能看到图片的原因。不足之处，请多多指教。
