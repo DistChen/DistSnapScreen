@@ -2,6 +2,7 @@
  * Date：2016/6/5
  * Author: DistChen
  * Desc：www.chenyp.com
+ * this is a test 
  */
 (function (factory) {
     if (typeof define === "function" && define.amd) {
